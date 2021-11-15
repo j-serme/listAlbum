@@ -4,9 +4,16 @@ font-family: 'Praise', cursive;
 
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 ul li {
     list-style: none;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 33%;
+    margin-bottom: 30px;
 }
 
 ul li img {
@@ -25,8 +32,6 @@ h1 {
     }
 
 article {
-    
-    
     display: flex;
 }
 
