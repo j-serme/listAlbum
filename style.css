@@ -7,13 +7,16 @@ font-family: 'Praise', cursive;
 ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
 }
 
 ul li {
     list-style: none;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    width: 33%;
     margin-bottom: 30px;
+    width: 30%;
 }
 
 ul li img {
@@ -38,4 +41,9 @@ article {
 .infos {
     padding-left: 10px;
     padding-right: 80px;
+}
+
+form {
+    text-align: center;
+    padding-top: 50px;
 }
