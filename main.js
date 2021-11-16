@@ -76,9 +76,28 @@ function display() {
         </li>`
     );
   }
-  document.querySelectorAll("li").innerHTML = cd;
+  document.querySelectorAll("li").innerHTML += cd;
+}
+
+function addAlbum(album) {
+  albums.push(album);
+  display();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   display();
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    let album = {
+      image: this.image.value,
+      nom: this.nom.value,
+      artiste: this.artiste.value,
+      label: this.label.value,
+      annee: this.annee.value,
+      genre: this.genre.value,
+      duree: this.duree.value,
+    };
+    addAlbum(album);
+    document.querySelector("form").reset();
+  });
 });
